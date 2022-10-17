@@ -11,6 +11,5 @@ def frequencies(items):
         frequencies[i] = itemstr.count(i)    
     
     # Your code goes here
-    print(frequencies)
     return frequencies
 
