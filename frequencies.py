@@ -2,14 +2,12 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def frequencies(items):
-    itemstr = map(str, items)
-    singleitems = set(map(str,itemstr))
-    
     frequencies = {}
-    for i in singleitems:
-        
-        frequencies[i] = list(itemstr).count(i)    
-    
-
+    for i in items:
+        x = str(i)
+        if not x in frequencies:
+            frequencies[x] = 1
+        else:
+            frequencies[x] += 1
     return frequencies
 
