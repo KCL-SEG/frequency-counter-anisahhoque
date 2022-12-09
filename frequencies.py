@@ -8,8 +8,8 @@ def frequencies(items):
     frequencies = {}
     for i in singleitems:
         
-        frequencies[i] = itemstr.count(i)    
+        frequencies[i] = list(itemstr).count(i)    
     
-    # Your code goes here
+
     return frequencies
 
